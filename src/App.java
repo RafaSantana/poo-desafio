@@ -4,7 +4,7 @@ import player.ReprodutorMusical;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("\n===Meu iPhone:===");
+        System.out.println("\n===:Meu iPhone:===");
         IPhone iphone = new IPhone();
         iphone.ligar();
         iphone.atender();
@@ -16,19 +16,20 @@ public class App {
         iphone.adicionarNovaAba();
         iphone.atualizarPagia();
 
-        System.out.println("\n===Meu iPad:===");
+        System.out.println("\n===:Meu iPad:===");
         ReprodutorMusical iPad = new IPhone();
 
         iPad.selecionarMusica(3);
         iPad.reproduzir();
         iPad.pausar();
 
-        System.out.println("\n===Meu Navegador:===");
+        System.out.println("\n===:Meu Navegador:===");
         NavegadorInternet edge = new IPhone();
 
         edge.exibirPagina("https://www.google.com");
         edge.adicionarNovaAba();
         edge.atualizarPagia();
+        edge.exibirPagina("https://www.youtube.com");
 
     }
 }
